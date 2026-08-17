@@ -1,34 +1,45 @@
-# Mantine Vite template
+# ChordCloud
 
-## Features
+An early web foundation for keeping sheet music accessible from anywhere.
 
-This template comes with the following features:
+## Status
 
-- [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Storybook](https://storybook.js.org/)
-- [Vitest](https://vitest.dev/) setup with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
+This repository currently contains the frontend foundation and component setup for the project. It is not yet a finished, hosted application.
 
-## npm scripts
+## Stack
 
-## Build and dev scripts
+- React + TypeScript
+- Vite
+- Mantine
+- Storybook
+- Vitest and React Testing Library
 
-- `dev` – start development server
-- `build` – build production version of the app
-- `preview` – locally preview production build
+## Run locally
 
-### Testing scripts
+Requires a current Node.js LTS release and Yarn 4.
 
-- `typecheck` – checks TypeScript types
-- `lint` – runs ESLint
-- `prettier:check` – checks files with Prettier
-- `vitest` – runs vitest tests
-- `vitest:watch` – starts vitest watch
-- `test` – runs `vitest`, `prettier:check`, `lint` and `typecheck` scripts
+```bash
+corepack enable
+yarn install
+yarn dev
+```
 
-### Other scripts
+Open the local URL printed by Vite.
 
-- `storybook` – starts storybook dev server
-- `storybook:build` – build production storybook bundle to `storybook-static`
-- `prettier:write` – formats all files with Prettier
+## Useful commands
+
+```bash
+yarn test             # types, formatting, lint, tests, and production build
+yarn storybook         # component explorer
+yarn storybook:build   # static Storybook build
+```
+
+## Repository layout
+
+- `src/` — application components and styles
+- `.storybook/` — Storybook configuration
+- `test-utils/` — shared test setup
+
+## License
+
+MIT
